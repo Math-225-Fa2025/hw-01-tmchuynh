@@ -320,6 +320,19 @@ Build on the pipeline to arrange the results so that they're arranged by `specie
 This means you will need to add one more step to the pipeline, and you have two options: `arrange(species, n)` or `arrange(n, species)`.
 You should try both and decide which one organizes the output by species and then ranks the names in order of frequency for each species.
 
+```{r}
+popular_names <- seattlepets %>%
+  mutate(animal_name = animal_name |>
+           tolower() |>
+           trimws()) %>%
+  filter(!is.na(animal_name), animal_name != "") %>%
+  count(species, animal_name, sort = TRUE, name = "count")
+
+popular_names <- popular_names %>%
+  group_by(species) %>%
+  arrange(species, desc(count), animal_name)
+```
+
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 4. In this exercise you're asked to complete the code provided for you. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 The following visualization plots the proportion of dogs with a given name versus the proportion of cats with the same name.
