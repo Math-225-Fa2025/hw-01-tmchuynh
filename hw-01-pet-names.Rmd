@@ -339,6 +339,16 @@ top_species_names <- popular_names %>%
   slice_max(order_by = count, n = 10, with_ties = FALSE)
 ```
 
+```{r}
+# Start from popular_names (species, animal_name, count)
+contingency_tbl <- top_species_names %>%
+  pivot_wider(
+    names_from = species,   # columns become species
+    values_from = count,    # values are counts
+    values_fill = NA         # fill missing combos with 0
+  )
+```
+
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 4. In this exercise you're asked to complete the code provided for you. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 The following visualization plots the proportion of dogs with a given name versus the proportion of cats with the same name.
