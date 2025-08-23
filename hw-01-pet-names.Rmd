@@ -1,7 +1,7 @@
 ---
 title: "HW 01 - Pet names"
 subtitle: "Meet the toolkit"
-author: [Enter your name]
+author: Tina Huynh
 output: 
   tufte::tufte_html:
     css: ../hw.css
@@ -40,17 +40,10 @@ If you haven't yet done so, please pause and complete the following before conti
 We've already thrown around a few new terms, so let's define them before we proceed.
 
 -   **R:** Name of the programming language we will be using throughout the course.
-
--   **RStudio:** An integrated development environment for R.
-    In other words, a convenient interface for writing and running R code.
-
+-   **RStudio:** An integrated development environment for R. In other words, a convenient interface for writing and running R code.
 -   **Git:** A version control system.
-
 -   **GitHub:** A web platform for hosting version controlled files and facilitating collaboration among users.
-
--   **Repository:** A Git repository contains all of your project's files and stores each file's revision history.
-    It's common to refer to a repository as a repo.
-
+-   **Repository:** A Git repository contains all of your project's files and stores each file's revision history. It's common to refer to a repository as a repo.
     -   In this course, each assignment you work on will be contained in a Git repo.
     -   For individual assignments, only you will have access to the repo. For team assignments, all team members will have access to a single repo where they work collaboratively.
     -   All repos associated with this course are housed in the course GitHub organization. The organization is set up such that students can only see repos they have access to, but the course staff can see all of them.
@@ -64,9 +57,7 @@ First, we will explore the fundamental building blocks of all of these tools.
 Before you can get started with the analysis, you need to make sure you:
 
 -   have a GitHub account
-
 -   are a member of the course GitHub organization
-
 -   are a member of the course RStudio Cloud space
 
 If you failed to confirm any of these, it means you have not yet completed the prerequisites for this assignment.
@@ -187,6 +178,8 @@ I *will* teach you how to save your password so you don't have to enter it every
 But for this one assignment you'll have to manually enter each time you push in order to gain some experience with it.
 
 **Thought exercise:** Which of the above steps (updating the YAML, committing, and pushing) needs to talk to GitHub?[^1]
+
+[^1]: Only pushing requires talking to GitHub, this is why you're asked for your password at that point.
 
 # Packages
 
@@ -345,5 +338,3 @@ ggplot(comb_name_props, aes(x = cat_prop, y = dog_prop)) +
 2.  Is the relationship between the two variables (proportion of cats with a given name and proportion of dogs with a given name) positive or negative? What does this mean in context of the data?
 
 🧶 ✅ ⬆️ *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Commit and push all changed files so that your Git pane is cleared up afterwards. Make sure that your last push to the repo comes before the deadline. You should confirm that what you committed and pushed are indeed in your repo that we will see by visiting your repo on GitHub.*
-
-[^1]: Only pushing requires talking to GitHub, this is why you're asked for your password at that point.
