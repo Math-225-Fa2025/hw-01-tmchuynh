@@ -399,6 +399,10 @@ ggplot(comb_name_props, aes(x = cat_prop, y = dog_prop)) +
 ```
 
 1.  What names are more common for cats than dogs? The ones above the line or the ones below the line?
+    -   **Above the line** → proportion of dogs \> proportion of cats (more common among dogs). **Names below the line** (e.g., *pepper, chloe, penny, lola*) are **more common for cats**.
+    -   **Below the line** → proportion of cats \> proportion of dogs (more common among cats). **Names above the line** (e.g., *lucy, charlie, bella*) are **more common for dogs**.
 2.  Is the relationship between the two variables (proportion of cats with a given name and proportion of dogs with a given name) positive or negative? What does this mean in context of the data?
+    -   The relationship is **positive**: names that are common among cats tend also to be common among dogs.
+    -   In context, this means **popular names tend to be popular across both species**. For example, *luna* and *lucy* rank highly for both cats and dogs, while less popular names remain less common in both groups.
 
 🧶 ✅ ⬆️ *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Commit and push all changed files so that your Git pane is cleared up afterwards. Make sure that your last push to the repo comes before the deadline. You should confirm that what you committed and pushed are indeed in your repo that we will see by visiting your repo on GitHub.*
