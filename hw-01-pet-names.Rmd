@@ -233,8 +233,6 @@ num_rows <- dimensions[1]
 num_cols <- dimensions[2]
 
 rm(dimensions)
-
-column_variables <- colnames(seattlepets)
 ```
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 1, knit the document, commit your changes with a commit message that says "Completed Exercise 1", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
@@ -242,6 +240,10 @@ column_variables <- colnames(seattlepets)
 ## Exercise #2
 
 Again, according to the data dictionary, how many variables do we have for each pet?
+
+```{r}
+column_variables <- colnames(seattlepets)
+```
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 2, knit the document, commit your changes with a commit message that says "Completed Exercise 2", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
