@@ -257,6 +257,11 @@ The following code does exactly that.
 The two lines of code can be read as "Start with the seattlepets data frame, and then count the animal_names, and display the results sorted in descending order. The 'and then' in the previous sentence maps to %>%, the pipe operator, which takes what comes before it and plugs it in as the first argument of the function that comes after it."
 ```
 
+The code below takes the `seattlepets` dataset from the **openintro** package and produces a frequency table of pet names.
+It first standardizes the `animal_name` variable by converting all names to lowercase and trimming any leading or trailing spaces.
+It then removes missing (`NA`) or blank entries to ensure only valid names remain.
+Finally, it counts the occurrences of each unique name, sorts them from most to least common, and labels the frequency column as `count` for clarity.
+
 ```{r}
 popular_names <- seattlepets %>%
   mutate(animal_name = animal_name |>
