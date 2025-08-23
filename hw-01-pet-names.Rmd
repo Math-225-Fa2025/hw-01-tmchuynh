@@ -222,15 +222,34 @@ You can find out more about the dataset by inspecting its documentation (which c
 
 # Exercises
 
-1.  According to the data dictionary, how many pets are included in this dataset?
+## Exercise #1
+
+According to the data dictionary, how many pets are included in this dataset?
+
+```{r}
+dimensions <- dim(seattlepets)
+
+num_rows <- dimensions[1]
+num_cols <- dimensions[2]
+
+rm(dimensions)
+
+column_variables <- colnames(seattlepets)
+```
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 1, knit the document, commit your changes with a commit message that says "Completed Exercise 1", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
-2.  Again, according to the data dictionary, how many variables do we have for each pet?
+## Exercise #2
+
+Again, according to the data dictionary, how many variables do we have for each pet?
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 2, knit the document, commit your changes with a commit message that says "Completed Exercise 2", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
-3.  What are the three most common pet names in Seattle? To do this you will need to count the frequencies of each pet name and display the results in descending order of frequency so that you can easily see the top three most popular names. The following code does exactly that.
+## Exercise #3
+
+What are the three most common pet names in Seattle?
+To do this you will need to count the frequencies of each pet name and display the results in descending order of frequency so that you can easily see the top three most popular names.
+The following code does exactly that.
 
 ```{marginfigure}
 The two lines of code can be read as "Start with the seattlepets data frame, and then count the animal_names, and display the results sorted in descending order. The 'and then' in the previous sentence maps to %>%, the pipe operator, which takes what comes before it and plugs it in as the first argument of the function that comes after it."
@@ -283,7 +302,12 @@ seattlepets %>%
   slice_max(n, n = 5)
 ```
 
-1.  Based on the previous output we can easily identify the most common cat and dog names in Seattle, but the output is sorted by `n` (the frequencies) as opposed to being organized by the `species`. Build on the pipeline to arrange the results so that they're arranged by `species` first, and then `n`. This means you will need to add one more step to the pipeline, and you have two options: `arrange(species, n)` or `arrange(n, species)`. You should try both and decide which one organizes the output by species and then ranks the names in order of frequency for each species.
+## Exercise #4
+
+Based on the previous output we can easily identify the most common cat and dog names in Seattle, but the output is sorted by `n` (the frequencies) as opposed to being organized by the `species`.
+Build on the pipeline to arrange the results so that they're arranged by `species` first, and then `n`.
+This means you will need to add one more step to the pipeline, and you have two options: `arrange(species, n)` or `arrange(n, species)`.
+You should try both and decide which one organizes the output by species and then ranks the names in order of frequency for each species.
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 4. In this exercise you're asked to complete the code provided for you. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
