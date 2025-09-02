@@ -3,10 +3,8 @@ title: "HW 01 - Pet names"
 subtitle: "Meet the toolkit"
 author: Tina Huynh
 output: 
-  tufte::tufte_html:
-    css: ../hw.css
-    tufte_variant: "envisioned"
-    highlight: pygments
+  pdf_document:
+    latex_engine: xelatex
 link-citations: true
 ---
 
