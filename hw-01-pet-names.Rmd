@@ -230,6 +230,8 @@ By running `?seattlepets` in the Console or using the Help menu in RStudio to se
 
 According to the data dictionary, how many pets are included in this dataset?
 
+There are a total of 52,519 pets in the dataset with 7 variables for each pet.
+
 ```{r}
 dimensions <- dim(seattlepets)
 
