@@ -222,6 +222,8 @@ knitr::include_graphics("img/view-data.png")
 
 You can find out more about the dataset by inspecting its documentation (which contains a **data dictionary**, name of each variable and its description), which you can access by running `?seattlepets` in the Console or using the Help menu in RStudio to search for `seattlepets`.
 
+By running `?seattlepets` in the Console or using the Help menu in RStudio to search for `seattlepets`, you'll see documentation about the dataset pop up in the Help pane which contains information such as the source of the data, a brief description, and a data dictionary that describes each variable in the dataset.
+
 # Exercises
 
 ## Exercise #1
