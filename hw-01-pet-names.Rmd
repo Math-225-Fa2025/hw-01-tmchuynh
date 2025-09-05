@@ -177,6 +177,10 @@ But for this one assignment you'll have to manually enter each time you push in 
 
 **Thought exercise:** Which of the above steps (updating the YAML, committing, and pushing) needs to talk to GitHub?[^1]
 
+Updating the YAML is also a local operation, it doesn't require any communication with GitHub.
+Committing is a local operation, it doesn't require any communication with GitHub.
+Pushing requires communication with GitHub, as it is the step that sends your changes to GitHub.
+
 [^1]: Only pushing requires talking to GitHub, this is why you're asked for your password at that point.
 
 # Packages
