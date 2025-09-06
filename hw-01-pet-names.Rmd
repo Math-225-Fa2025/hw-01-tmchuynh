@@ -471,7 +471,12 @@ ggplot(comb_name_props, aes(x = cat_prop, y = dog_prop)) +
   ) +
   geom_point(color = COL["blue", "full"], alpha = 0.8) +
   theme_minimal() +
-  labs(x = "Proportion of cats", y = "Proportion of dogs") +
+  labs(
+    title = "Comparison of Popular Cat and Dog Names in Seattle",
+    caption = "Each point shows the proportion of cats and dogs with a given name. Names above the diagonal are more common for dogs; below, more common for cats.",
+    x = "Proportion of cats",
+    y = "Proportion of dogs"
+  ) +
   xlim(0.002, 0.01) +
   ylim(0.002, 0.01)
 ```
