@@ -246,13 +246,20 @@ ncol(seattlepets)
 Again, according to the data dictionary, how many variables do we have for each pet?
 
 There are 7 variables for each pet in the dataset:
-- `license_issue_date`: Date the animal was registered with Seattle
-- `license_number`: Unique identifier for each pet license
-- `animal_name`: Name of the pet
-- `species`: Species of the pet (e.g., Dog, Cat, etc.)
-- `primary_breed`: Primary breed of the pet
-- `secondary_breed`: Secondary breed of the pet (if applicable)
-- `zip_code`: Zip code animal is registered in
+
+-   `license_issue_date`: Date the animal was registered with Seattle
+
+-   `license_number`: Unique identifier for each pet license
+
+-   `animal_name`: Name of the pet
+
+-   `species`: Species of the pet (e.g., Dog, Cat, etc.)
+
+-   `primary_breed`: Primary breed of the pet
+
+-   `secondary_breed`: Secondary breed of the pet (if applicable)
+
+-   `zip_code`: Zip code animal is registered in
 
 ```{r}
 column_variables <- colnames(seattlepets)
