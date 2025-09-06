@@ -5,6 +5,11 @@ author: Tina Huynh
 output: 
   pdf_document:
     latex_engine: xelatex
+    toc: true
+    number_sections: true
+    fig_caption: true
+    citation_package: natbib
+    keep_tex: true
 link-citations: true
 ---
 
@@ -13,7 +18,8 @@ knitr::opts_chunk$set(
   eval = FALSE,
   out.width = "80%",
   fig.asp = 0.618,
-  fig.width = 10
+  fig.width = 10,
+  dpi = 300
 )
 library(tidyverse)
 library(openintro)
@@ -430,7 +436,7 @@ The following visualization plots the proportion of dogs with a given name versu
 The 20 most common cat and dog names are displayed.
 The diagonal line on the plot is the $x = y$ line; if a name appeared on this line, the name's popularity would be exactly the same for dogs and cats.
 
-```{r eval = TRUE, echo = FALSE, fig.fullwidth = TRUE}
+```{r popular_names, eval = TRUE, fig.fullwidth = TRUE}
 # data prep
 name_props <- seattlepets %>%
   filter(
