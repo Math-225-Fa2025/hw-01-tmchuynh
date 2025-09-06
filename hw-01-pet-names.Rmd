@@ -372,9 +372,30 @@ popular_names
 top_species_names <- popular_names %>%
   group_by(species) %>%
   slice_max(order_by = count, n = 10, with_ties = FALSE)
+top_species_names
 ```
 
-```{r}
+Here, we can see the top 10 names for each species along with their counts, organized by species and then by frequency within each species.
+
+Looking at the data more closely:
+
+1.  **Dogs**: The most popular dog names are "lucy" (338), "charlie" (306), and "bella" (249).
+    These three names significantly outrank other dog names, with counts over 200.
+    There's a gradual decline in popularity after the top three names.
+
+2.  **Cats**: The most popular cat names are "luna" (111), "lucy" (102), and "lily" (86).
+    Cat names show a more even distribution in popularity compared to dog names, with a more gradual decrease in frequency from top to bottom.
+
+3.  **Goats**: All goat names appear just once in the dataset, suggesting there are few registered goats in Seattle, and their names are quite diverse with no clear pattern of popularity.
+
+4.  **Pigs**: Similar to goats, all pig names appear only once, indicating a small population of registered pigs with unique names.
+
+It's interesting to note that "lucy" appears in the top names for both cats and dogs, showing some cross-species name preferences.
+The data also reveals that dogs are much more commonly registered pets in Seattle than cats, as evidenced by the higher counts for dog names compared to cat names.
+
+Now that we have the top 10 names for each species, we can create a contingency table that displays the counts of these names across different species.
+
+```{r eval=TRUE}
 # Start from popular_names (species, animal_name, count)
 contingency_tbl <- top_species_names %>%
   pivot_wider(
