@@ -261,8 +261,8 @@ There are 7 variables for each pet in the dataset:
 
 -   `zip_code`: Zip code animal is registered in
 
-```{r}
-column_variables <- colnames(seattlepets)
+```{r eval=TRUE}
+colnames(seattlepets)
 ```
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 2, knit the document, commit your changes with a commit message that says "Completed Exercise 2", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
