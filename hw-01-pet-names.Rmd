@@ -351,7 +351,7 @@ Build on the pipeline to arrange the results so that they're arranged by `specie
 This means you will need to add one more step to the pipeline, and you have two options: `arrange(species, n)` or `arrange(n, species)`.
 You should try both and decide which one organizes the output by species and then ranks the names in order of frequency for each species.
 
-```{r}
+```{r eval=TRUE}
 popular_names <- seattlepets %>%
   mutate(animal_name = animal_name |>
     tolower() |>
@@ -359,12 +359,16 @@ popular_names <- seattlepets %>%
   filter(!is.na(animal_name), animal_name != "") %>%
   count(species, animal_name, sort = TRUE, name = "count")
 
+popular_names
+
 popular_names <- popular_names %>%
   group_by(species) %>%
   arrange(species, desc(count), animal_name)
+popular_names
 ```
 
-```{r}
+```{r eval=TRUE}
+# Select the top 10 most common pet names for each species and display their counts
 top_species_names <- popular_names %>%
   group_by(species) %>%
   slice_max(order_by = count, n = 10, with_ties = FALSE)
