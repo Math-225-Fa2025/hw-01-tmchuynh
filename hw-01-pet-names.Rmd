@@ -517,4 +517,23 @@ The diagonal reference line indicates equal popularity between the two species.
     -   "Luna" is popular for both species but slightly more common for cats
     -   "Max" sits almost directly on the diagonal, indicating equal proportional popularity
 
+**Statistical Insights**
+
+1.  **Correlation Analysis**: The plot shows a positive correlation between cat and dog name preferences, suggesting that human naming tendencies transcend pet species.
+    However, the correlation is moderate, not strong, indicating distinct species-specific preferences.
+
+2.  **Outliers**: "Lucy" and "Charlie" appear as statistical outliers in dog naming popularity, while "Luna" is an outlier for cats.
+
+3.  **Proportion Range**: Dog name proportions extend higher (up to 0.01) than cat names (maximum around 0.008), suggesting slightly more naming concentration in dogs.
+
+**Cultural Implications**
+
+This visualization reveals how pet naming conventions reflect human cultural preferences while also showing species-specific patterns.
+The differences may reflect perceptions of personality traits associated with each species or gender associations with certain names.
+Names like "Lucy" may be perceived as fitting dog personalities, while "Lily" may be seen as more suitable for cat temperaments.
+
+1.  **Shared Naming Trends**: The overlap in popular names indicates shared cultural influences in pet naming, with certain names being trendy across both species.
+2.  **Species-Specific Trends**: The distinct preferences for certain names reflect cultural perceptions of cats and dogs, with some names evoking traits associated with each species (e.g., "Daisy" for dogs, "Lily" for cats).
+3.  **Humanization of Pets**: The use of human names for pets reflects a broader cultural trend of anthropomorphizing animals, indicating the deep emotional bonds people form with their pets.
+
 🧶 ✅ ⬆️ *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Commit and push all changed files so that your Git pane is cleared up afterwards. Make sure that your last push to the repo comes before the deadline. You should confirm that what you committed and pushed are indeed in your repo that we will see by visiting your repo on GitHub.*
