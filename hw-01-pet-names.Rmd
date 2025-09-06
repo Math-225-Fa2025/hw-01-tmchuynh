@@ -403,7 +403,26 @@ contingency_tbl <- top_species_names %>%
     values_from = count, # values are counts
     values_fill = NA # fill missing combos with 0
   )
+contingency_tbl
+
+# sort by Dog first, then Cat, then name
+contingency_tbl <- contingency_tbl %>%
+  arrange(desc(Dog), desc(Cat), desc(Goat), desc(Pig), animal_name)
+contingency_tbl
 ```
+
+When organizing the data by `species` first and then by `n`, we can clearly see the most common names for each species:
+
+1.  For **Dogs**:
+    -   "lucy" is the most popular dog name (338 dogs)
+    -   "charlie" is the second most popular (306 dogs)
+    -   "bella" is third (249 dogs)
+    -   Other popular names include "luna" (246), "daisy" (221), "max" (189), and "cooper" (189)
+2.  For **Cats**:
+    -   "luna" is the most popular cat name (111 cats)
+    -   "lucy" is the second most popular (102 cats)
+    -   "bella" ranks third (82 cats)
+    -   Other popular names include "max" (83 cats) and "lily" (86 cats) arrange(desc(Dog), desc(Cat), desc(Goat), desc(Pig), animal_name) contingency_tbl
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 4. In this exercise you're asked to complete the code provided for you. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
