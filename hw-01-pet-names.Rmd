@@ -271,7 +271,7 @@ colnames(seattlepets)
 
 What are the three most common pet names in Seattle?
 
-The most common pet names are *max*, *bella*, and *charlie*.
+The most common pet names are *Lucy*, *Charlie*, and *Luna*.
 
 To do this you will need to count the frequencies of each pet name and display the results in descending order of frequency so that you can easily see the top three most popular names.
 The following code does exactly that.
