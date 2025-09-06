@@ -503,4 +503,18 @@ The diagonal reference line indicates equal popularity between the two species.
 
 2.  **Clustering Pattern**: Most names cluster in the lower left portion of the plot (between 0.002-0.006 on both axes), indicating that pet name distributions have a "long tail" - a few very popular names and many less common ones.
 
+**Species Preferences**
+
+1.  **Dog-Preferred Names**: Names appearing above the diagonal line are proportionally more common for dogs:
+    -   "Lucy" shows the strongest dog preference (around 0.01 for dogs vs. 0.006 for cats)
+    -   "Charlie" and "Bella" are also significantly more popular for dogs
+    -   "Daisy" appears almost exclusively as a dog name
+2.  **Cat-Preferred Names**: Names below the diagonal line are proportionally more common for cats:
+    -   "Lily" shows strong cat preference
+    -   "Oliver", "Sophie", and "Chloe" are notably more popular among cats
+    -   "Pepper" and "Henry" appear primarily as cat names
+3.  **Similar Popularity Names**: Names near the diagonal have similar proportional popularity:
+    -   "Luna" is popular for both species but slightly more common for cats
+    -   "Max" sits almost directly on the diagonal, indicating equal proportional popularity
+
 🧶 ✅ ⬆️ *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Commit and push all changed files so that your Git pane is cleared up afterwards. Make sure that your last push to the repo comes before the deadline. You should confirm that what you committed and pushed are indeed in your repo that we will see by visiting your repo on GitHub.*
