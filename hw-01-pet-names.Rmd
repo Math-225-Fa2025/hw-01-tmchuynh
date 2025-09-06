@@ -341,6 +341,9 @@ seattlepets %>%
   slice_max(n, n = 5)
 ```
 
+This output provides the top 5 names for each species along with their respective counts.
+However, the results are sorted by count across all species, which means that the top names for one species may appear before those of another species.
+
 ## Exercise #4
 
 Based on the previous output we can easily identify the most common cat and dog names in Seattle, but the output is sorted by `n` (the frequencies) as opposed to being organized by the `species`.
