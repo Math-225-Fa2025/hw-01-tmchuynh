@@ -486,7 +486,7 @@ ggplot(comb_name_props, aes(x = cat_prop, y = dog_prop)) +
     -   **Below the line** → proportion of cats \> proportion of dogs (more common among cats). **Names above the line** (e.g., *daisy*) are **more common for dogs**. They have a higher proportion of dogs with that name compared to cats.
     -   The name **luna** is the most popular for both cats and dogs, with a proportion of approximately 0.055 for cats and 0.007 for dogs.
 2.  Is the relationship between the two variables (proportion of cats with a given name and proportion of dogs with a given name) positive or negative? What does this mean in context of the data?
-    -   The relationship is **positive**: names that are common among cats tend also to be common among dogs.
+    -   The relationship is **positive**: names that are common among cats tend also to be common among dogs. Names that are rare among cats tend also to be rare among dogs.
     -   In context, this means **popular names tend to be popular across both species**. For example, *luna* and *lucy* rank highly for both cats and dogs, while less popular names remain less common in both groups.
 3. Which name is the most popular for both cats and dogs?
     -   The name **luna** is the most popular for both cats and dogs, with a proportion of approximately 0.055 for cats and 0.007 for dogs.
