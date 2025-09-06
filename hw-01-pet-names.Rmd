@@ -495,4 +495,12 @@ ggplot(comb_name_props, aes(x = cat_prop, y = dog_prop)) +
 The scatter plot above visualizes the relationship between the popularity of names among cats and dogs in Seattle.
 Each point represents a specific pet name, with its position determined by the proportion of cats (x-axis) and dogs (y-axis) that bear that name.
 The diagonal reference line indicates equal popularity between the two species.
+
+**Overall Name Distribution**
+
+1.  **Diagonal Reference Line**: The diagonal line represents equal popularity between cats and dogs.
+    Names falling exactly on this line would have the same proportional representation in both populations.
+
+2.  **Clustering Pattern**: Most names cluster in the lower left portion of the plot (between 0.002-0.006 on both axes), indicating that pet name distributions have a "long tail" - a few very popular names and many less common ones.
+
 🧶 ✅ ⬆️ *Now is a good time to commit and push your changes to GitHub with an appropriate commit message. Commit and push all changed files so that your Git pane is cleared up afterwards. Make sure that your last push to the repo comes before the deadline. You should confirm that what you committed and pushed are indeed in your repo that we will see by visiting your repo on GitHub.*
